@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color:rgb(211, 27, 43);
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color:rgb(211, 27, 43);
+    color:white;
+    border:rgb(211, 27, 43);
+    font-size:small;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:white ;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background:grey;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:#333;
+}
+
+.course {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align:center;
+}
+
+.course img {
+    max-width: 100%;
+    height: auto;
+}
+
+.helps {
+    display: flex;
+    flex-wrap:wrap;
+    padding: 20px;
+    background-color:white;
+}
+.help {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin:2px;
+    width: 30%;
+    text-align: center;
+}
+
+.help img{
+    width:50%;
+    height:50%;
+    backgroun-color:white
+}
+
+.icons{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 30px;
+    background-color:white;
+}
+
+.icon {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color:grey;
+    padding: 10px;
+    margin:6px;
+    width: 30%;
+    height:50%;
+    text-align: center;
+}
+.testimonials {
+    background: #e2e2e2;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 80%;
